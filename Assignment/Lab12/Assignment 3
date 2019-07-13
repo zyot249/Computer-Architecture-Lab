@@ -1,0 +1,14 @@
+#Laboratory Exercise 12, Assignment 3
+
+* Explain: Cache size, block size, number of sets, write policy and replacement policy.
+Cache size: the whole size of cache memory
+Block size: the cache is divided into bunch of blocks with the same size
+Number of sets: Cache size divides block size
+
+
+* If a cache is large enough that all the code within a loop fits in the cache, how many cache misses will there be during the execution of the loop ? Is this good or bad?
+If a cache is large enough, there will be no cache misses, but the speed would be decrease
+
+
+* What should the code look like that would benefit the most from a large block size?
+Larger blocks should reduce miss rate due to spatial locality. But in a fixed-sized cache, larger blocks => fewer of them and then increase miss rate and pollution.

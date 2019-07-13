@@ -22,7 +22,7 @@ WRAP:
 	addi 	$fp, $sp, -8		# adjust stack pointer
 	sw 	$ra, 0($sp)		# save return address
 		
-	li 	$a0, 3			# load test input N
+	li 	$a0, 10			# load test input N
 	jal 	FACT			# call fact procedure
 	nop
 	

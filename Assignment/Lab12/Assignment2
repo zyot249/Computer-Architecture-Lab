@@ -1,0 +1,16 @@
+#Laboratory Exercise 12, Assignment 2
+
+* How is the full 32-bit address used in the cache memory?
+A computer uses 32-bit byte addressing in a cache memory: 18 bits use for tag, 10 bits use for set and 4 bits use for offset
+
+* What happens when there is a cache miss?
+A cache misses when the cache memory is accessed and the referenced data item is not present in the cache, RAM is accessed to allocate data. 
+
+* What happens when there is a cache hit?
+That's when data is found in cache
+
+* What is the block size?
+A cache is divided into cache blocks (or cache lines) and the block size is the size of a cache block.
+
+* What is the function of the tag? 
+The tag is kept to allow the cache to translate from a cache address (tag, index, offset) to a unique CPU address

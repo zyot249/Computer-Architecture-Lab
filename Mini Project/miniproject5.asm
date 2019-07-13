@@ -20,7 +20,16 @@
 	
 	j	__start
 	#j	exit
-	# print binary proceduce
+#----------------------------------------------------------------------------------
+# print binary proceduce
+# @brief	print binary-form of input number
+# @param[in] s1 : the value of input number
+# t0 : temporary register for storing input number
+# t1 : the result when searching each bit of input number
+# t3 : mask to get each bit of number
+# t4 : number of loops
+#----------------------------------------------------------------------------------
+
 print_bin:
 	# show msg
 	li	$v0, 4
@@ -55,7 +64,17 @@ print_bin:
 	li	$a0, 10
 	syscall
 	jr	$ra
-
+#----------------------------------------------------------------------------------
+# print hexadecimal proceduce
+# @brief	print hexadecimal-form of input number
+# @param[in] s1 : the value of input number
+# t0 : temporary register for storing input number
+# t1 : the result when searching each bit of input number
+# t3 : mask to get each bit of number
+# t4 : number of loops
+# t5 : number of bit that t0 will be shifted right to
+# t6 : the result of comparison result t1 and 10
+#----------------------------------------------------------------------------------
 print_hex:
 	# show msg
 	li	$v0, 4
